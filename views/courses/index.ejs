@@ -1,0 +1,31 @@
+<% include ../partials/header %>
+
+<div class="container">
+    <header class="jumbotron">
+        <div class="container">
+            <h1>IDC Courses</h1>
+            <p>Get reviews for all IDC courses</p>
+            <p>
+                <a class="btn btn-primary btn-large" href="/courses/new">Add New Course</a>
+        </div>
+    </header>
+
+
+    <div class="row text-center">
+        <% courses.forEach(function(course){ %>
+        <div class="col-md-3 col-sm-6">
+            <div class="thumbnail">
+                <img src="<%= course.image %>" width="600px">
+                <div class="caption">
+                    <h4><%= course.name %></h4>
+                    <a href="/courses/<%= course._id%>" class="btn btn-primary">More info</a>
+                </div>
+            </div>
+        </div>
+        <% }); %>
+    </div>
+
+</div>
+
+
+<% include ../partials/footer %>
