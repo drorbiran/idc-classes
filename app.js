@@ -102,7 +102,7 @@ app.get("/courses/:id", function(req,res){
 // COMMENTS ROUTES
 //=============================
 //NEW - show a from to create a comment
-app.get("/courses/:id/comments/new",function(req, res){
+app.get("/courses/:id/comments/new",isLoggedIn, function(req, res){
     //find course by id
     Course.findById(req.params.id, function(err,course){
         if (err){
@@ -114,7 +114,7 @@ app.get("/courses/:id/comments/new",function(req, res){
 });
 
 //CREATE - create a new comment
-app.post("/courses/:id/comments", function(req,res){
+app.post("/courses/:id/comments",isLoggedIn, function(req,res){
     //find the course according to id
     Course.findById(req.params.id,function(err,course){
         if (err) {
@@ -173,6 +173,20 @@ app.post("/login", passport.authenticate("local",
         failureRedirect: "/login"
     }), function (req, res) {
 });
+
+//handle logout logic
+app.get("/logout", function (req,res) {
+    req.logout();
+    res.redirect("/courses");
+});
+
+function isLoggedIn(req,res,next){
+    if(req.isAuthenticated()){
+        return next();
+    } else {
+        res.redirect("/login");
+    }
+}
 
 app.listen(3000,function(){
     console.log("idc-courses server is listening on port 3000");
