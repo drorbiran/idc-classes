@@ -1,0 +1,17 @@
+body {
+
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.fit-image {
+    height: 300px;
+    overflow: hidden;
+}
