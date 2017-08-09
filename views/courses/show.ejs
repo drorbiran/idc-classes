@@ -1,20 +1,34 @@
 <% include ../partials/header.ejs %>
 
-<h1><%= course.name %></h1>
-<img src="<%= course.image%>">
-<p><%= course.description%></p>
-<p>
-    <a class="btn btn-success" href="/courses/<%= course._id %>/comments/new">Add a comment</a>
-</p>
-
-<!-- diplay comments -->
-<% course.comments.forEach(function(comment){ %>
-    <p>
-        <strong>
-            <%= comment.author %> -
-        </strong>
-        <%= comment.text %>
-    </p>
-<% }) %>
+<div class="container">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <div class="thumbnail">
+            <img class="img-responsive" src="<%= course.image%>">
+            <div class="caption">
+                <h4 class="pull-right">Lecture name</h4>
+                <h1 class="text-primary"><%= course.name %></h1>
+                <p><%= course.description%></p>
+            </div>
+        </div>
+        <div class="well">
+            <div class="text-right">
+                <a class="btn btn-success" href="/courses/<%= course._id %>/comments/new">Add a comment</a>
+            </div>
+            <hr>
+            <!-- diplay comments -->
+            <% course.comments.forEach(function(comment){ %>
+            <div class="row">
+                <div class="clo-md-12">
+                    <strong><%= comment.author %></strong>
+                    <span class="pull-right">10 days ago</span>
+                    <p><%= comment.text %></p>
+                </div>
+            </div>
+            <% }) %>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</div>
 
 <% include ../partials/footer.ejs%>
