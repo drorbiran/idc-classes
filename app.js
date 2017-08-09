@@ -142,7 +142,7 @@ app.post("/courses/:id/comments", function(req,res){
 // AUTH ROUTES
 //=============================
 
-//SHOW - show the register form
+//show the register form
 app.get("/register", function(req,res){
     res.render("register");
 });
@@ -161,6 +161,18 @@ app.post("/register", function (req, res) {
     });
 });
 
+//show login form
+app.get("/login", function (req,res) {
+    res.render("login");
+});
+
+//handle login logic
+app.post("/login", passport.authenticate("local",
+    {
+        successRedirect: "/courses",
+        failureRedirect: "/login"
+    }), function (req, res) {
+});
 
 app.listen(3000,function(){
     console.log("idc-courses server is listening on port 3000");
