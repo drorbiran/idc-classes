@@ -31,6 +31,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 
+
 //passport config
 app.use(require("express-session")({
     secret: "Hakol beseder todo bom",
@@ -42,6 +43,12 @@ app.use(passport.session());
 passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
+
+//sending user to all routes
+app.use(function (req, res, next) {
+    res.locals.currentUser = req.user;
+    next();
+});
 
 app.get("/", function(req, res){
    res.render("landing");
