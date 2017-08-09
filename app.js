@@ -1,15 +1,19 @@
-var express     = require("express");
-    app         = express();
-    bodyParser  = require('body-parser');
-    mongoose    = require("mongoose");
+var express         = require("express"),
+    app             = express(),
+    bodyParser      = require('body-parser'),
+    mongoose        = require("mongoose"),
+    passport        = require("passport"),
+    LocalStrategy   = require("passport-local");
+
+
+
+//models
+var Course      = require("./models/course"),
+    Comment     = require("./models/comment"),
+    User        = require("./models/user"),
     seedDB      = require("./seeds.js");
 
 seedDB();
-
-//models
-var Course      = require("./models/course");
-    Comment     = require("./models/comment");
-
 
 mongoose.Promise = global.Promise;
 mongoose.connect("mongodb://localhost/idc", {
