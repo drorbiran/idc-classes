@@ -6,17 +6,17 @@ var Course      = require("./models/course");
 var data = [
     {
         name: "Course1",
-        image: "http://placehold.it/160x160&text=course1",
+        image: "https://www.idc.ac.il/he/schools/cs/PublishingImages/Untitled%20design%20(6).jpg",
         description: "This is the description for this course This is the description for this course This is the description for this course This is the description for this course This is the description for this course"
     },
     {
         name: "Course2",
-        image: "http://placehold.it/160x160&text=course2",
+        image: "https://www.idc.ac.il/he/schools/cs/PublishingImages/studio_3.jpg",
         description: "This is the description for this course This is the description for this course This is the description for this course This is the description for this course This is the description for this course"
     },
     {
         name: "Course3",
-        image: "http://placehold.it/160x160&text=course3",
+        image: "https://www.idc.ac.il/he/schools/cs/PublishingImages/studio_5.jpg",
         description: "This is the description for this course This is the description for this course This is the description for this course This is the description for this course This is the description for this course"
     }
 ];
