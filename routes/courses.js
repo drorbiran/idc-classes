@@ -19,12 +19,16 @@ router.get("/", function(req,res){
 });
 
 //CREATE - add new course to db
-router.post("/", function(req,res){
+router.post("/",isLoggedIn, function(req,res){
     //get course data from a form and add it to the db
     let name = req.body.name;
     let image = req.body.image;
     let description = req.body.description;
-    let newCourse = {name:name, image:image, description:description};
+    let author = {
+        id: req.user._id,
+        username: req.user.username
+    };
+    let newCourse = {name:name, image:image, description:description, author: author};
     Course.create(newCourse, function(err,newlyCreated) {
         if (err) {
             console.log(err);
@@ -36,7 +40,7 @@ router.post("/", function(req,res){
 });
 
 //NEW - show a from to create a course
-router.get("/new", function(req,res){
+router.get("/new",isLoggedIn, function(req,res){
     res.render("courses/new.ejs");
 });
 
@@ -51,5 +55,13 @@ router.get("/:id", function(req,res){
         }
     });
 });
+
+function isLoggedIn(req,res,next){
+    if(req.isAuthenticated()){
+        return next();
+    } else {
+        res.redirect("/login");
+    }
+}
 
 module.exports = router;
