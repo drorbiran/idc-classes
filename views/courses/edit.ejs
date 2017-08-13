@@ -1,0 +1,29 @@
+<% include ../partials/header.ejs %>
+
+
+<div class="container">
+    <div class="row">
+        <h1 style="text-align: center;">Update Course</h1>
+        <div style="width: 30%; margin: 48px auto;">
+            <form action="/courses/<%= course._id%>?_method=PUT" method="post">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="course[name]" value="<%= course.name %>">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="course[image]" value="<%= course.image %>">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="course[description]" value="<%= course.description %>">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-deafulat btn-primary btn-block">Update</button>
+                </div>
+            </form>
+            <a href="/courses">Back</a>
+        </div>
+    </div>
+</div>
+
+
+
+<% include ../partials/footer.ejs%>

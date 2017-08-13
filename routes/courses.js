@@ -56,6 +56,28 @@ router.get("/:id", function(req,res){
     });
 });
 
+//Edit - show the edit course page
+router.get("/:id/edit", function (req,res) {
+    Course.findById(req.params.id, function(err, foundCourse){
+        if (err){
+            res.redirect("/courses");
+        } else {
+            res.render("courses/edit", {course: foundCourse});
+        }
+    });
+});
+
+//UPDATE - updating the course
+router.put("/:id", function(req,res){
+    Course.findByIdAndUpdate(req.params.id, req.body.course, function(err,updated){
+        if (err){
+            res.redirect("/courses");
+        } else {
+            res.redirect("/courses/" + req.params.id);
+        }
+    })
+});
+
 function isLoggedIn(req,res,next){
     if(req.isAuthenticated()){
         return next();

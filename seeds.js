@@ -6,17 +6,17 @@ var Course      = require("./models/course");
 var data = [
     {
         name: "Course1",
-        image: "https://www.idc.ac.il/he/schools/cs/PublishingImages/Untitled%20design%20(6).jpg",
+        image: "https://images.unsplash.com/photo-1502209877429-d7c6df9eb3f9?dpr=2&auto=format&fit=crop&w=1500&h=1005&q=80&cs=tinysrgb&crop=",
         description: "This is the description for this course This is the description for this course This is the description for this course This is the description for this course This is the description for this course"
     },
     {
         name: "Course2",
-        image: "https://www.idc.ac.il/he/schools/cs/PublishingImages/studio_3.jpg",
+        image: "https://images.unsplash.com/photo-1484665739383-a1069a82d4be?dpr=2&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=",
         description: "This is the description for this course This is the description for this course This is the description for this course This is the description for this course This is the description for this course"
     },
     {
         name: "Course3",
-        image: "https://www.idc.ac.il/he/schools/cs/PublishingImages/studio_5.jpg",
+        image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?dpr=2&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=",
         description: "This is the description for this course This is the description for this course This is the description for this course This is the description for this course This is the description for this course"
     }
 ];
