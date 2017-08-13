@@ -78,6 +78,17 @@ router.put("/:id", function(req,res){
     })
 });
 
+//DESTROY - deleting a course
+router.delete("/:id", function(req,res){
+   Course.findByIdAndRemove(req.params.id, function(err){
+       if (err){
+           res.redirect("/courses");
+       } else {
+           res.redirect("/courses");
+       }
+   })
+});
+
 function isLoggedIn(req,res,next){
     if(req.isAuthenticated()){
         return next();
