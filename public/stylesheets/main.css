@@ -15,3 +15,7 @@ body {
     height: 240px;
     overflow: hidden;
 }
+
+.bg{
+    border-image-source: url("https://www.idc.ac.il/en/PublishingImages/main-slider-01.jpg");
+}

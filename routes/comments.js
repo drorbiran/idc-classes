@@ -34,6 +34,11 @@ router.post("/",isLoggedIn, function(req,res){
                 if(err){
                     console.log(err);
                 } else {
+                    //add user to the comment
+                    comment.author.id = req.user._id;
+                    comment.author.username = req.user.username;
+                    comment.save();
+                    console.log("comment : " + comment);
                     //add the comment to the course
                     course.comments.push(comment);
                     course.save();
