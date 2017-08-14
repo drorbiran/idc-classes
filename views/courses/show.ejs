@@ -14,10 +14,12 @@
                 <p>
                     <i>Added by <%= course.author.username %></i>
                 </p>
+                <% if (currentUser && course.author.id.equals(currentUser._id)) { %>
                 <a class="btn btn-xs btn-warning" href="/courses/<%= course._id%>/edit">Edit</a>
                 <form id="delete-form" action="/courses/<%= course._id%>?_method=DELETE" method="POST">
                     <button  class="btn btn-xs btn-danger">Delete</button>
                 </form>
+                <% } %>
             </div>
         </div>
         <div class="well">

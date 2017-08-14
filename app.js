@@ -17,7 +17,7 @@ var courseRoutes    = require("./routes/courses"),
     commentRoutes   = require("./routes/comments"),
     indexRoutes     = require("./routes/index");
 
-seedDB(); //seed the data base
+// seedDB(); //seed the data base
 
 //mongoose config
 mongoose.Promise = global.Promise;

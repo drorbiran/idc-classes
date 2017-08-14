@@ -57,7 +57,7 @@ router.get("/:id", function(req,res){
 });
 
 //Edit - show the edit course page
-router.get("/:id/edit", function (req,res) {
+router.get("/:id/edit",isCourseAuthor, function (req,res) {
     Course.findById(req.params.id, function(err, foundCourse){
         if (err){
             res.redirect("/courses");
@@ -68,7 +68,7 @@ router.get("/:id/edit", function (req,res) {
 });
 
 //UPDATE - updating the course
-router.put("/:id", function(req,res){
+router.put("/:id",isCourseAuthor, function(req,res){
     Course.findByIdAndUpdate(req.params.id, req.body.course, function(err,updated){
         if (err){
             res.redirect("/courses");
@@ -79,7 +79,7 @@ router.put("/:id", function(req,res){
 });
 
 //DESTROY - deleting a course
-router.delete("/:id", function(req,res){
+router.delete("/:id",isCourseAuthor, function(req,res){
    Course.findByIdAndRemove(req.params.id, function(err){
        if (err){
            res.redirect("/courses");
@@ -94,6 +94,26 @@ function isLoggedIn(req,res,next){
         return next();
     } else {
         res.redirect("/login");
+    }
+}
+
+function isCourseAuthor(req,res,next){
+    //check if login
+    if(req.isAuthenticated()){
+        //check if the user is the owner of course
+        Course.findById(req.params.id, function(err, foundCourse){
+            if(err){
+                res.redirect("back");
+            } else {
+                if(foundCourse.author.id.equals(req.user._id)){
+                    next();
+                } else {
+                    res.redirect("back");
+                }
+            }
+        })
+    } else {
+        res.redirect("back");
     }
 }
 

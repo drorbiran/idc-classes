@@ -29,29 +29,29 @@ function seedDB(){
         }
         console.log("Removed all courses");
         //adding new courses
-            data.forEach(function(seed){
-                Course.create(seed, function(err, course){
-                    if(err){
-                        console.log(err);
-                    }
-                    console.log("course was added");
-                    //add a comment
-                    Comment.create(
-                        {
-                            text: "this is a template comment",
-                            author: "jhon"
-                        }, function(err,comment){
-                            if(err){
-                                console.log(err);
-                            } else {
-                                course.comments.push(comment);
-                                course.save();
-                                console.log("comment added");
-                            }
-                        }
-                    )
-                })
-            })
+        //     data.forEach(function(seed){
+        //         Course.create(seed, function(err, course){
+        //             if(err){
+        //                 console.log(err);
+        //             }
+        //             console.log("course was added");
+        //             //add a comment
+        //             Comment.create(
+        //                 {
+        //                     text: "this is a template comment",
+        //                     author: "jhon"
+        //                 }, function(err,comment){
+        //                     if(err){
+        //                         console.log(err);
+        //                     } else {
+        //                         course.comments.push(comment);
+        //                         course.save();
+        //                         console.log("comment added");
+        //                     }
+        //                 }
+        //             )
+        //         })
+        //     })
     });
 }
 
