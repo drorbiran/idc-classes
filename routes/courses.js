@@ -62,7 +62,7 @@ router.get("/:id/edit",isCourseAuthor, function (req,res) {
         if (err){
             res.redirect("/courses");
         } else {
-            res.render("courses/edit", {course: foundCourse});
+            res.render("courses/edit", {course_id: req.params.id, course: foundCourse});
         }
     });
 });

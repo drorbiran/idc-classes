@@ -50,6 +50,31 @@ router.post("/",isLoggedIn, function(req,res){
     });
 });
 
+
+//EDIT - show edit comment page
+router.get("/:comment_id/edit", function(req,res){
+   Comment.findById(req.params.comment_id, function(err, foundComment){
+       if (err) {
+           res.redirect("back");
+       } else {
+           res.render("comments/edit", {course_id: req.params.id, comment: foundComment});
+       }
+   })
+});
+
+//UPDATE - update the comment
+router.put("/:comment_id", function(req,res){
+   Comment.findByIdAndUpdate(req.params.comment_id,req.body.comment,function(err,updatedComment){
+       if (err) {
+           console.log("1");
+           res.redirect("back");
+       } else {
+           console.log("2");
+           res.redirect("/courses/" + req.params.id);
+       }
+   })
+});
+
 function isLoggedIn(req,res,next){
     if(req.isAuthenticated()){
         return next();
