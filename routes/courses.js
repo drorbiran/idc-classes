@@ -1,9 +1,10 @@
 //=============================
 // COURSE ROUTES
 //=============================
-var express = require("express");
-var router = express.Router();
-var Course = require("../models/course");
+var express     = require("express");
+var router      = express.Router();
+var Course      = require("../models/course");
+var middleware  = require("../middleware");
 
 //INDEX - display all courses
 router.get("/", function(req,res){
@@ -19,7 +20,7 @@ router.get("/", function(req,res){
 });
 
 //CREATE - add new course to db
-router.post("/",isLoggedIn, function(req,res){
+router.post("/",middleware.isLoggedIn, function(req,res){
     //get course data from a form and add it to the db
     let name = req.body.name;
     let image = req.body.image;
@@ -40,7 +41,7 @@ router.post("/",isLoggedIn, function(req,res){
 });
 
 //NEW - show a from to create a course
-router.get("/new",isLoggedIn, function(req,res){
+router.get("/new",middleware.isLoggedIn, function(req,res){
     res.render("courses/new.ejs");
 });
 
@@ -57,7 +58,7 @@ router.get("/:id", function(req,res){
 });
 
 //Edit - show the edit course page
-router.get("/:id/edit",isCourseAuthor, function (req,res) {
+router.get("/:id/edit",middleware.isCourseAuthor, function (req,res) {
     Course.findById(req.params.id, function(err, foundCourse){
         if (err){
             res.redirect("/courses");
@@ -68,7 +69,7 @@ router.get("/:id/edit",isCourseAuthor, function (req,res) {
 });
 
 //UPDATE - updating the course
-router.put("/:id",isCourseAuthor, function(req,res){
+router.put("/:id",middleware.isCourseAuthor, function(req,res){
     Course.findByIdAndUpdate(req.params.id, req.body.course, function(err,updated){
         if (err){
             res.redirect("/courses");
@@ -79,7 +80,7 @@ router.put("/:id",isCourseAuthor, function(req,res){
 });
 
 //DESTROY - deleting a course
-router.delete("/:id",isCourseAuthor, function(req,res){
+router.delete("/:id",middleware.isCourseAuthor, function(req,res){
    Course.findByIdAndRemove(req.params.id, function(err){
        if (err){
            res.redirect("/courses");
@@ -89,32 +90,5 @@ router.delete("/:id",isCourseAuthor, function(req,res){
    })
 });
 
-function isLoggedIn(req,res,next){
-    if(req.isAuthenticated()){
-        return next();
-    } else {
-        res.redirect("/login");
-    }
-}
-
-function isCourseAuthor(req,res,next){
-    //check if login
-    if(req.isAuthenticated()){
-        //check if the user is the owner of course
-        Course.findById(req.params.id, function(err, foundCourse){
-            if(err){
-                res.redirect("back");
-            } else {
-                if(foundCourse.author.id.equals(req.user._id)){
-                    next();
-                } else {
-                    res.redirect("back");
-                }
-            }
-        })
-    } else {
-        res.redirect("back");
-    }
-}
 
 module.exports = router;
