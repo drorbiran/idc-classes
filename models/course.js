@@ -4,6 +4,7 @@ var mongoose = require("mongoose");
 var courseSchema = new mongoose.Schema({
     name: String,
     image: String,
+    lecturer: String,
     description: String,
     author: {
         id: {

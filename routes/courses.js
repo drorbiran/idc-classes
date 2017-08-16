@@ -23,13 +23,14 @@ router.get("/", function(req,res){
 router.post("/",middleware.isLoggedIn, function(req,res){
     //get course data from a form and add it to the db
     let name = req.body.name;
+    let lecturer = req.body.lecturer;
     let image = req.body.image;
     let description = req.body.description;
     let author = {
         id: req.user._id,
         username: req.user.username
     };
-    let newCourse = {name:name, image:image, description:description, author: author};
+    let newCourse = {name:name, lecturer:lecturer, image:image, description:description, author: author};
     Course.create(newCourse, function(err,newlyCreated) {
         if (err) {
             console.log(err);
