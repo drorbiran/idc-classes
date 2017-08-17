@@ -7,7 +7,7 @@
         <div style="width: 30%; margin: 48px auto;">
             <form action="/courses/<%= course._id %>/comments" method="post">
                 <div class="form-group">
-                    <input class="form-control" type="text" name="comment[text]" placeholder="text">
+                    <textarea class="form-control" type="text" name="comment[text]" placeholder="text"></textarea>
                 </div>
                 <div class="form-group">
                     <button class="btn btn-lg btn-deafulat btn-primary btn-block">Add</button>

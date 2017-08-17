@@ -64,6 +64,6 @@ app.use(indexRoutes);
 app.use("/courses",courseRoutes);
 app.use("/courses/:id/comments",commentRoutes);
 
-app.listen(3001,function(){
+app.listen(3000,function(){
     console.log("idc-courses server is listening on port 3000");
 });
