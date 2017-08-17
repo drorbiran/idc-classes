@@ -14,7 +14,7 @@ router.get("/", function(req,res){
             console.log(err);
         } else {
             //render the courses page with all courses
-            res.render("courses/index",{courses:allCourses});
+            res.render("courses/index",{courses:allCourses, page: 'courses'});
         }
     })
 });
