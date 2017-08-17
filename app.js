@@ -22,7 +22,9 @@ var courseRoutes    = require("./routes/courses"),
 
 //mongoose config
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost/idc", {
+
+// mongoose.connect("mongodb://localhost/idc", {
+mongoose.connect("mongodb://admin:1234@ds145293.mlab.com:45293/idc-courses", {
     useMongoClient: true
 }).then(function () {
     console.log('MongoDB has been connected');
