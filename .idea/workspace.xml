@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7a2e14b-4f1f-431c-a405-494d5dfaf21f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -27,8 +26,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+            <state relative-caret-position="249">
+              <caret line="68" column="27" lean-forward="false" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -47,7 +46,7 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
+            <state relative-caret-position="0">
               <caret line="6" column="43" lean-forward="false" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
               <folding />
             </state>
@@ -89,16 +88,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/partials/footer.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="199" lean-forward="false" selection-start-line="9" selection-start-column="199" selection-end-line="9" selection-end-column="199" />
               <folding />
             </state>
           </provider>
@@ -360,7 +349,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="pac&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/package.json&#10;show&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/views/courses/show.ejs&#10;index.js&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/routes/index.js&#10;regi&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/views/register.ejs&#10;login&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/views/login.ejs&#10;app.&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/app.js&#10;seeds&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/seeds.js&#10;ךשמגןמע&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/views/landing.ejs&#10;index&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/middleware/index.js&#10;midd&#9;null&#9;null&#10;hea&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/views/partials/header.ejs&#10;courses&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/routes/courses.js&#10;delete-form&#9;null&#9;null&#10;edit&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/views/comments/edit.ejs&#10;commen&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/models/comment.js&#10;co&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/routes/comments.js&#10;user&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/models/user.js" />
+    <property name="SearchEverywhereHistoryKey" value="config&#9;null&#9;null&#10;pac&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/package.json&#10;show&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/views/courses/show.ejs&#10;index.js&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/routes/index.js&#10;regi&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/views/register.ejs&#10;login&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/views/login.ejs&#10;app.&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/app.js&#10;seeds&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/seeds.js&#10;ךשמגןמע&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/views/landing.ejs&#10;index&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/middleware/index.js&#10;midd&#9;null&#9;null&#10;hea&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/views/partials/header.ejs&#10;courses&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/routes/courses.js&#10;delete-form&#9;null&#9;null&#10;edit&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/views/comments/edit.ejs&#10;commen&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/models/comment.js&#10;co&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/routes/comments.js&#10;user&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/models/user.js" />
     <property name="javascript.nodejs.core.library.configured.version" value="6.6.0" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="$USER_HOME$/.nvm/versions/node/v6.6.0/bin/node" />
@@ -441,16 +430,16 @@
       <updated>1502203502018</updated>
       <workItem from="1502203503268" duration="15542000" />
       <workItem from="1502532111331" duration="11554000" />
-      <workItem from="1502737798833" duration="20888000" />
+      <workItem from="1502737798833" duration="21852000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47984000" />
+    <option name="totallyTimeSpent" value="48948000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13460183" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -459,7 +448,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42637643" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42637643" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -793,9 +782,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/connection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="58" column="2" lean-forward="false" selection-start-line="58" selection-start-column="2" selection-end-line="58" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
+        <state relative-caret-position="0">
           <caret line="6" column="43" lean-forward="false" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
           <folding />
         </state>
@@ -803,8 +800,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        <state relative-caret-position="249">
+          <caret line="68" column="27" lean-forward="false" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
           <folding />
         </state>
       </provider>
