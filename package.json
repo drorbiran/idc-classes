@@ -4,7 +4,8 @@
   "description": "a revomendation site for classes in idc",
   "main": "app.js",
   "scripts": {
-    "test": "Dror Biran and Michal Momika"
+    "test": "Dror Biran and Michal Momika",
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
