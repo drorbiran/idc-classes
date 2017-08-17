@@ -3,7 +3,9 @@
     <div class="col-md-1"></div>
     <div class="col-md-10">
         <div class="thumbnail">
-                <img class="img-responsive" src="<%= course.image%>+'?dpr=2&auto=format&fit=crop&w=918&h=250&q=80&cs=tinysrgb&crop='">
+            <div>
+                <img class="img-responsive" src="<%= course.image%>">
+            </div>
             <div class="caption">
                 <h4 class="pull-right"><%= course.lecturer %></h4>
                 <h1 class="text-primary"><%= course.name %></h1>
