@@ -66,6 +66,9 @@ app.use(indexRoutes);
 app.use("/courses",courseRoutes);
 app.use("/courses/:id/comments",commentRoutes);
 
-app.listen(process.env.PORT,function(){
-    console.log("idc-courses server is listening on port 3000");
+// app.listen(process.env.PORT,function(){
+app.listen(3000,function(){
+    console.log("listening on port 3000");
+    console.log("You are using the production DB!!!");
+    console.log("This project is deployed on https://idc-courses.herokuapp.com/");
 });

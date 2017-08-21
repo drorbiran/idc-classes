@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e7a2e14b-4f1f-431c-a405-494d5dfaf21f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/landing.ejs" afterPath="$PROJECT_DIR$/views/landing.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/header.ejs" afterPath="$PROJECT_DIR$/views/partials/header.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,9 +28,22 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+            <state relative-caret-position="267">
+              <caret line="72" column="45" lean-forward="false" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="45" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="126">
+                <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -55,20 +68,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/courses/edit.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="16" column="105" lean-forward="false" selection-start-line="16" selection-start-column="105" selection-end-line="16" selection-end-column="105" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="header.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/partials/header.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
+            <state relative-caret-position="-525">
               <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
               <folding />
             </state>
@@ -165,9 +168,10 @@
         <option value="$PROJECT_DIR$/public/stylesheets/main.css" />
         <option value="$PROJECT_DIR$/routes/courses.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/landing.ejs" />
         <option value="$PROJECT_DIR$/views/partials/header.ejs" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -190,8 +194,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="873" />
+    <option name="width" value="1920" />
+    <option name="height" value="1173" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -362,7 +366,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="config&#9;null&#9;null&#10;pac&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/package.json&#10;show&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/views/courses/show.ejs&#10;index.js&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/routes/index.js&#10;regi&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/views/register.ejs&#10;login&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/views/login.ejs&#10;app.&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/app.js&#10;seeds&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/seeds.js&#10;ךשמגןמע&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/views/landing.ejs&#10;index&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/middleware/index.js&#10;midd&#9;null&#9;null&#10;hea&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/views/partials/header.ejs&#10;courses&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/routes/courses.js&#10;delete-form&#9;null&#9;null&#10;edit&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/views/comments/edit.ejs&#10;commen&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/models/comment.js&#10;co&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/routes/comments.js&#10;user&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/models/user.js" />
+    <property name="SearchEverywhereHistoryKey" value="read&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/README.md&#10;config&#9;null&#9;null&#10;pac&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/package.json&#10;show&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/views/courses/show.ejs&#10;index.js&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/routes/index.js&#10;regi&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/views/register.ejs&#10;login&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/views/login.ejs&#10;app.&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/app.js&#10;seeds&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/seeds.js&#10;ךשמגןמע&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/views/landing.ejs&#10;index&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/middleware/index.js&#10;midd&#9;null&#9;null&#10;hea&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/views/partials/header.ejs&#10;courses&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/routes/courses.js&#10;delete-form&#9;null&#9;null&#10;edit&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/views/comments/edit.ejs&#10;commen&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/models/comment.js&#10;co&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/routes/comments.js&#10;user&#9;FILE&#9;file:///Users/drorb/Study/4JS/idc-courses/models/user.js" />
     <property name="javascript.nodejs.core.library.configured.version" value="6.6.0" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="$USER_HOME$/.nvm/versions/node/v6.6.0/bin/node" />
@@ -443,18 +447,18 @@
       <updated>1502203502018</updated>
       <workItem from="1502203503268" duration="15542000" />
       <workItem from="1502532111331" duration="11554000" />
-      <workItem from="1502737798833" duration="22533000" />
+      <workItem from="1502737798833" duration="24784000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49629000" />
+    <option name="totallyTimeSpent" value="51880000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1920" height="1173" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13460183" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.100579254" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -462,7 +466,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42637643" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3080481" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -698,8 +702,8 @@
         <state relative-caret-position="324">
           <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
           <folding>
-            <element signature="e#63#89#0#HTML" expanded="true" />
-            <element signature="e#110#148#0#HTML" expanded="true" />
+            <element signature="e#63#89#0#HTML" expanded="false" />
+            <element signature="e#110#148#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -709,8 +713,8 @@
         <state relative-caret-position="342">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="e#63#89#0#HTML" expanded="true" />
-            <element signature="e#112#150#0#HTML" expanded="true" />
+            <element signature="e#63#89#0#HTML" expanded="false" />
+            <element signature="e#112#150#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -795,14 +799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/landing.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -813,9 +809,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/partials/header.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
+        <state relative-caret-position="-525">
           <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="72" column="45" lean-forward="false" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="126">
+            <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
